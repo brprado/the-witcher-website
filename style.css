@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@keyframes lineGlow {
+  0% {
+    background-color: #b50c0f;
+  }
+  50% {
+    background-color: rgb(54, 28, 61);
+  }
+  90% {
+    background-color: rgb(78, 99, 108);
+  }
+  100% {
+    background-color: #b50c0f;
+  }
+}
+
+.container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/witcherwall.png);
+  background-position: center;
+  font-family: "Luxurious Roman", cursive;
+}
+.menu {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 1.7rem;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+}
+.logo {
+  height: 75px;
+  transition: ease-out 0.2s;
+}
+.logo:hover {
+  height: 80px;
+}
+div span {
+  padding: 0.5rem;
+  color: #eaeaea;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+div span:hover {
+  color: #b50c0f;
+  background-color: rgba(49, 10, 11, 0.1);
+  border-radius: 100px;
+}
+.line {
+  margin-top: 1rem;
+  width: calc(100%);
+  border: 0.1px solid rgba(78, 99, 108, 0.5);
+  border-radius: 50px;
+  height: 5px;
+  animation-name: lineGlow;
+  animation-duration: 6s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.content {
+  position: relative;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80vh;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.card {
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  display: flex;
+  width: 26rem;
+  height: 27.5rem;
+  background: rgba(78, 99, 108, 0.2);
+  border-radius: 2rem;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+.card:hover {
+  animation-name: float;
+  animation-duration: 0.5s;
+}
+.card-content {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+
+  color: #fff;
+}
+.geralt {
+  -webkit-box-shadow: 8px 7px 10px 5px rgba(181, 12, 15, 0.72);
+  box-shadow: 8px 7px 10px 5px rgba(181, 12, 15, 0.72);
+  transition: all ease-out 0.3s;
+}
+.geralt:hover {
+  -webkit-box-shadow: 13px 12px 15px 10px rgba(181, 12, 15, 0.72);
+  box-shadow: 13px 12px 15px 10px rgba(181, 12, 15, 0.72);
+}
+/* aumentar 5 */
+.yennefer {
+  -webkit-box-shadow: 8px 7px 10px 5px rgba(54, 28, 61, 0.72);
+  box-shadow: 8px 7px 10px 5px rgba(54, 28, 61, 0.72);
+  transition: all ease-out 0.3s;
+}
+.yennefer:hover {
+  -webkit-box-shadow: 13px 12px 15px 10px rgba(54, 28, 61, 0.72);
+  box-shadow: 13px 12px 15px 10px rgba(54, 28, 61, 0.72);
+}
+.ciri {
+  -webkit-box-shadow: 8px 7px 10px 9px rgba(78, 99, 108, 0.72);
+  box-shadow: 8px 7px 10px 9px rgba(78, 99, 108, 0.72);
+  transition: all ease-out 0.3s;
+}
+.ciri:hover {
+  -webkit-box-shadow: 13px 12px 15px 10px rgba(78, 99, 108, 0.72);
+  box-shadow: 13px 12px 15px 10px rgba(78, 99, 108, 0.72);
+}
+.card-content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  flex-shrink: 1;
+}
+#geraltPhoto {
+  height: 50%;
+  flex: auto auto auto;
+}
+#yenneferPhoto {
+  height: 50%;
+  flex: auto auto auto;
+}
+#ciriPhoto {
+  height: 48%;
+  flex: auto auto auto;
+}
+.sinopsis {
+  justify-content: stretch;
+  display: flex;
+  /* background-color: rgba(78, 99, 108, 0.6); */
+  align-items: center;
+  border-radius: 10px;
+  transition: all ease 0.5s;
+}
+.sinopsis:hover {
+  background-color: rgba(78, 99, 108, 0.3);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
